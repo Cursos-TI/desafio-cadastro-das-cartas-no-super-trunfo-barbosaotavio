@@ -22,8 +22,16 @@ int main() {
     float pib2 = 1800.550;
     int pontost2 = 50;
 
-    char resultado1[500];
-    char resultado2[500];
+    // Cálculos carta 1
+    float densidade1 = populacao1 / area1;
+    float pibPerCapita1 = (pib1 * 1000000000) / populacao1;
+
+    // Cálculos carta 2
+    float densidade2 = populacao2 / area2;
+    float pibPerCapita2 = (pib2 * 1000000000) / populacao2;
+    
+    char resultado1[600];
+    char resultado2[600];
 
     // Monta o texto da carta 1
     sprintf(resultado1,
